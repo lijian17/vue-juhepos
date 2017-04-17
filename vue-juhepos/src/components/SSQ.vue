@@ -1,9 +1,13 @@
 <template>
-  <SSQHeader></SSQHeader>
+  <div id="ssq">
+    <SSQHeader></SSQHeader>
+    <OpenWinHistory></OpenWinHistory>
+  </div>
 </template>
 
 <script>
 import SSQHeader from '@/components/ssq/SSQHeader'
+import OpenWinHistory from '@/components/ssq/OpenWinHistory'
 export default {
   name: 'SSQ',
   data () {
@@ -11,7 +15,7 @@ export default {
       msg: '双色球'
     }
   },
-  components: { SSQHeader }
+  components: { SSQHeader, OpenWinHistory }
 }
 </script>
 
