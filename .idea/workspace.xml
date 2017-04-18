@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc41c0ae-9e49-4c5e-90bc-423210761088" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-juhepos/src/components/ssq/BottomStatusBar.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDS.vue" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDT.vue" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue-juhepos/src/components/SSQ.vue" afterPath="$PROJECT_DIR$/vue-juhepos/src/components/SSQ.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWinHistory.vue" afterPath="$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWinHistory.vue" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqHeader.vue" afterPath="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqHeader.vue" />
     </list>
     <ignored path="vue-juhepos.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -48,8 +51,8 @@
       <file leaf-file-name="SSQ.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/SSQ.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state vertical-scroll-proportion="-3.125">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -58,38 +61,48 @@
       <file leaf-file-name="ssqHeader.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqHeader.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.vue" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vue-juhepos/src/App.vue">
+      <file leaf-file-name="ssqDT.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDT.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state vertical-scroll-proportion="-18.75">
+              <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="openWinHistory.vue" pinned="false" current-in-tab="false">
+      <file leaf-file-name="openWinHistory.vue" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWinHistory.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9583333">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state vertical-scroll-proportion="0.5869565">
+              <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BottomStatusBar.vue" pinned="false" current-in-tab="true">
+      <file leaf-file-name="BottomStatusBar.vue" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/BottomStatusBar.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.82608694">
-              <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+            <state vertical-scroll-proportion="-8.75">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="38" selection-end-column="8" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ssqDS.vue" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDS.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-15.625">
+              <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
               <folding />
             </state>
           </provider>
@@ -120,10 +133,12 @@
         <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/SSQHeader.vue" />
         <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWin.vue" />
         <option value="$PROJECT_DIR$/vue-juhepos/src/App.vue" />
-        <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqHeader.vue" />
-        <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWinHistory.vue" />
-        <option value="$PROJECT_DIR$/vue-juhepos/src/components/SSQ.vue" />
         <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/BottomStatusBar.vue" />
+        <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqHeader.vue" />
+        <option value="$PROJECT_DIR$/vue-juhepos/src/components/SSQ.vue" />
+        <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDT.vue" />
+        <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDS.vue" />
+        <option value="$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWinHistory.vue" />
       </list>
     </option>
   </component>
@@ -324,7 +339,7 @@
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="js-jscs-nodeInterpreter" value="D:\Program Files\nodejs\node.exe" />
     <property name="editor.config.accepted" value="true" />
-    <property name="settings.editor.selected.configurable" value="Settings.JavaScript" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
     <property name="JavaScriptPreferStrict" value="false" />
     <property name="JavaScriptWeakerCompletionTypeGuess" value="true" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
@@ -398,7 +413,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24904943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -658,13 +673,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28425655">
-          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vue-juhepos/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2826087">
@@ -695,42 +703,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/App.vue">
+    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/BottomStatusBar.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="36" column="0" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="38" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqHeader.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="8" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWinHistory.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9583333">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state vertical-scroll-proportion="-8.75">
+          <caret line="14" column="16" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/SSQ.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state vertical-scroll-proportion="-3.125">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/BottomStatusBar.vue">
+    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDS.vue">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.82608694">
-          <caret line="38" column="8" selection-start-line="38" selection-start-column="8" selection-end-line="38" selection-end-column="8" />
+        <state vertical-scroll-proportion="-15.625">
+          <caret line="61" column="65" selection-start-line="61" selection-start-column="65" selection-end-line="61" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1521739">
+          <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26239067">
+          <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/ssqDT.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-18.75">
+          <caret line="42" column="28" selection-start-line="42" selection-start-column="28" selection-end-line="42" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue-juhepos/src/components/ssq/openWinHistory.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5869565">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
           <folding />
         </state>
       </provider>

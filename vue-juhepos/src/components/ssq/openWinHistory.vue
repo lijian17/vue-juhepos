@@ -21,7 +21,14 @@
       <div class="axLeft">上期开奖</div>
       <div class="axRight"><span>01</span><span>02</span><span>03</span><span>20</span><span>22</span><span>30</span><span class="on">05</span></div>
     </div>
-    <div class="z_ttp" id="ttp" v-on:click="showOpenWinHistoryList = !showOpenWinHistoryList"><img src="../../assets/ssq/ptt.png" width="100%" /></div>
+    <div class="z_ttp" id="ttp" v-on:click="showOpenWinHistoryList = !showOpenWinHistoryList">
+      <div v-if="showOpenWinHistoryList">
+        <img src="../../assets/ssq/ttp.png" width="100%" />
+      </div>
+      <div v-else="!showOpenWinHistoryList">
+        <img src="../../assets/ssq/ptt.png" width="100%" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -39,7 +46,7 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.kjTop{ width:100%; height:auto; overflow:hidden;  text-align:center;   }
+.kjTop{ width:100%; height:auto; overflow:hidden;  text-align:center; position: fixed; z-index: 1;}
 /**/
 .z_xin{width:100%; height:auto; overflow:hidden;  background:#FFF; font-size:4vw; padding:.5rem 0; border-bottom:#aeafaf solid 1px;}
 
