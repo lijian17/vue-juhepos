@@ -9,9 +9,9 @@
     </section>
     <transition name="slide-fade">
       <section id="topSelect" v-if="showPlayTypeSelect">
-        <a href="ssqDS.html" class="on">单式</a>
-        <a href="javascript:;">复式</a>
-        <a href="ssqDT.html">胆拖</a>
+        <a href="javascript:;" class="on" v-on:click.stop.prevent="showSelect('单式' + playType, 120101001)">单式</a>
+        <a href="javascript:;" v-on:click.stop.prevent="showSelect('复式' + playType, 120101001)">复式</a>
+        <a href="javascript:;" v-on:click.stop.prevent="showSelect('胆拖' + playType, 120101004)">胆拖</a>
       </section>
     </transition>
 
@@ -35,6 +35,13 @@ export default {
       msg: '双色球',
       showPlayTypeSelect: false,
       showTopRight: false
+    }
+  },
+  props: ['playType'],
+  methods: {
+    showSelect: function (msg, value) {
+      this.playType = value
+      alert(msg)
     }
   }
 }
