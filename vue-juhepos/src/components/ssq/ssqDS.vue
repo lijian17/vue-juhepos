@@ -3,39 +3,40 @@
     <div class="ssqzmtRedtile">红球<span>请选择6个红球1个红球</span></div>
     <div class="ssqzmtRedBoll">
       <ul id="redBoll">
-        <li><span class="">01</span><b class="arb_bop">5</b></li>
-        <li><span class="">02</span><b class="arb_bop">5</b></li>
-        <li><span class="">03</span><b class="arb_bop">5</b></li>
-        <li><span class="">04</span><b class="arb_bop">5</b></li>
-        <li><span class="">05</span><b class="arb_bop">5</b></li>
-        <li><span class="">06</span><b class="arb_bop">5</b></li>
-        <li><span class="">07</span><b class="arb_bop">5</b></li>
-        <li><span class="">08</span><b class="arb_bop">5</b></li>
-        <li><span class="">09</span><b class="arb_bop">5</b></li>
-        <li><span class="">10</span><b class="arb_bop">5</b></li>
-        <li><span class="">11</span><b class="arb_bop">5</b></li>
-        <li><span class="">12</span><b class="arb_bop">5</b></li>
-        <li><span class="">13</span><b class="arb_bop">5</b></li>
-        <li><span class="">14</span><b class="arb_bop">5</b></li>
-        <li><span class="">15</span><b class="arb_bop">5</b></li>
-        <li><span class="">16</span><b class="arb_bop">5</b></li>
-        <li><span class="">17</span><b class="arb_bop">5</b></li>
-        <li><span class="">18</span><b class="arb_bop">5</b></li>
-        <li><span class="">19</span><b class="arb_bop">5</b></li>
-        <li><span class="">20</span><b class="arb_bop">5</b></li>
-        <li><span class="">21</span><b class="arb_bop">5</b></li>
-        <li><span class="">22</span><b class="arb_bop">5</b></li>
-        <li><span class="">23</span><b class="arb_bop">5</b></li>
-        <li><span class="">24</span><b class="arb_bop">5</b></li>
-        <li><span class="">25</span><b class="arb_bop">5</b></li>
-        <li><span class="">26</span><b class="arb_bop">5</b></li>
-        <li><span class="">27</span><b class="arb_bop">5</b></li>
-        <li><span class="">28</span><b class="arb_bop">5</b></li>
-        <li><span class="">29</span><b class="arb_bop">5</b></li>
-        <li><span class="">30</span><b class="arb_bop">5</b></li>
-        <li><span class="">31</span><b class="arb_bop">5</b></li>
-        <li><span class="">32</span><b class="arb_bop">5</b></li>
-        <li><span class="">33</span><b class="arb_bop">5</b></li>
+        <li v-for="(redBoll, index) in redBolls"><span class="">{{redBoll.redBoll}}{{index + 1}}</span><b class="arb_bop">{{redBoll.missingValue}}</b></li>
+        <!--<li><span class="">01</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">02</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">03</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">04</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">05</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">06</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">07</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">08</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">09</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">10</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">11</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">12</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">13</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">14</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">15</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">16</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">17</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">18</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">19</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">20</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">21</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">22</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">23</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">24</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">25</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">26</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">27</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">28</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">29</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">30</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">31</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">32</span><b class="arb_bop">5</b></li>-->
+        <!--<li><span class="">33</span><b class="arb_bop">5</b></li>-->
       </ul>
     </div>
 
@@ -67,10 +68,45 @@
 
 <script>
 export default {
-  name: 'BottomStatusBar',
+  name: 'ssqDS',
   data: function () {
     return {
-      msg: '底部状态栏'
+      msg: '双色球单式',
+      redBolls: [
+        {redBoll: '01', missingValue: '5'},
+        {redBoll: '02', missingValue: '5'},
+        {redBoll: '03', missingValue: '5'},
+        {redBoll: '04', missingValue: '5'},
+        {redBoll: '05', missingValue: '5'},
+        {redBoll: '06', missingValue: '5'},
+        {redBoll: '07', missingValue: '5'},
+        {redBoll: '08', missingValue: '5'},
+        {redBoll: '09', missingValue: '5'},
+        {redBoll: '10', missingValue: '5'},
+        {redBoll: '11', missingValue: '5'},
+        {redBoll: '12', missingValue: '5'},
+        {redBoll: '13', missingValue: '5'},
+        {redBoll: '14', missingValue: '5'},
+        {redBoll: '15', missingValue: '5'},
+        {redBoll: '16', missingValue: '5'},
+        {redBoll: '17', missingValue: '5'},
+        {redBoll: '18', missingValue: '5'},
+        {redBoll: '19', missingValue: '5'},
+        {redBoll: '20', missingValue: '5'},
+        {redBoll: '21', missingValue: '5'},
+        {redBoll: '22', missingValue: '5'},
+        {redBoll: '23', missingValue: '5'},
+        {redBoll: '24', missingValue: '5'},
+        {redBoll: '25', missingValue: '5'},
+        {redBoll: '26', missingValue: '5'},
+        {redBoll: '27', missingValue: '5'},
+        {redBoll: '28', missingValue: '5'},
+        {redBoll: '29', missingValue: '5'},
+        {redBoll: '30', missingValue: '5'},
+        {redBoll: '31', missingValue: '5'},
+        {redBoll: '32', missingValue: '5'},
+        {redBoll: '33', missingValue: '5'}
+      ]
     }
   }
 }
