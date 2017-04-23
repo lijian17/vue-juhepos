@@ -1,9 +1,9 @@
 <template>
   <div id="ssq">
-    <SSQHeader playType="120103001"></SSQHeader>
+    <SSQHeader></SSQHeader>
     <OpenWinHistory></OpenWinHistory>
-    <ssqDS v-if="playType == 120101001"></ssqDS>
-    <ssqDT v-if="playType == 120103004"></ssqDT>
+    <ssqDS v-if="playType === 120101001 || playType === 120101003"></ssqDS>
+    <ssqDT v-if="playType === 120101004"></ssqDT>
     <BottomStatusBar></BottomStatusBar>
   </div>
 </template>
@@ -14,15 +14,20 @@ import OpenWinHistory from '@/components/ssq/OpenWinHistory'
 import ssqDS from '@/components/ssq/ssqDS'
 import ssqDT from '@/components/ssq/ssqDT'
 import BottomStatusBar from '@/components/ssq/BottomStatusBar'
+import {mapGetters} from 'vuex'
 export default {
   name: 'SSQ',
+  components: {SSQHeader, OpenWinHistory, ssqDS, ssqDT, BottomStatusBar},
   data: function () {
     return {
-      msg: '双色球',
-      playType: 120101001
+      msg: '双色球'
     }
   },
-  components: {SSQHeader, OpenWinHistory, ssqDS, ssqDT, BottomStatusBar}
+  computed: {
+    ...mapGetters({
+      playType: 'playType'
+    })
+  }
 }
 </script>
 

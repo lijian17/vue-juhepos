@@ -9,9 +9,9 @@
     </section>
     <transition name="slide-fade">
       <section id="topSelect" v-if="showPlayTypeSelect">
-        <a href="javascript:;" class="on" v-on:click.stop.prevent="showSelect('单式' + playType, 120101001)">单式</a>
-        <a href="javascript:;" v-on:click.stop.prevent="showSelect('复式' + playType, 120101001)">复式</a>
-        <a href="javascript:;" v-on:click.stop.prevent="showSelect('胆拖' + playType, 120101004)">胆拖</a>
+        <a href="javascript:;" class="on" v-on:click.stop.prevent="changeSSQPlayType(120101001)">单式</a>
+        <a href="javascript:;" v-on:click.stop.prevent="changeSSQPlayType(120101003)">复式</a>
+        <a href="javascript:;" v-on:click.stop.prevent="changeSSQPlayType(120101004)">胆拖</a>
       </section>
     </transition>
 
@@ -37,11 +37,12 @@ export default {
       showTopRight: false
     }
   },
-  props: ['playType'],
   methods: {
     showSelect: function (msg, value) {
-      this.playType = value
       alert(msg)
+    },
+    changeSSQPlayType: function (playType) {
+      this.$store.dispatch('changeSSQPlayType', playType)
     }
   }
 }
