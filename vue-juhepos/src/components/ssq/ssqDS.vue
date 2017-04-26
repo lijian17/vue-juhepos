@@ -4,7 +4,7 @@
     <div class="ssqzmtRedBall">
       <ul id="redBall">
         <li v-for="(redBall, index) in redBalls">
-          <span v-bind:class="{on: (redBall.isChecked !== 0 ? true : false)}" v-on:click.stop.prevent="handleRedBall(redBall.isChecked, index)">{{(index + 1) | autoZeroPrefix(2)}}</span>
+          <span v-bind:class="{on: redBall.isChecked}" v-on:click.stop.prevent="handleRedBall(redBall.isChecked, index)">{{(index + 1) | autoZeroPrefix(2)}}</span>
           <b class="arb_bop">{{redBall.missingValue}}</b>
         </li>
       </ul>
@@ -31,9 +31,7 @@ export default {
   name: 'ssqDS',
   data: function () {
     return {
-      msg: '双色球单式',
-      redClass: {on: true},
-      blueClass: {on: true}
+      msg: '双色球单式'
     }
   },
   filters: {
@@ -50,7 +48,6 @@ export default {
   },
   methods: {
     handleRedBall: function (redBall, index) {
-      alert('index==' + index)
       this.$store.dispatch('choiceRedBall_SSQ_DS', {redBall: redBall, index: index})
     },
     handleBlueBall: function (blueBall, index) {
