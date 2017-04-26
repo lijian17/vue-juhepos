@@ -47,11 +47,11 @@ export default {
     })
   },
   methods: {
-    handleRedBall: function (redBall, index) {
-      this.$store.dispatch('choiceRedBall_SSQ_DS', {redBall: redBall, index: index})
+    handleRedBall: function (isChecked, index) {
+      this.$store.dispatch('choiceRedBall_SSQ_DS', {isChecked: isChecked, index: index, canChoiceRedBallCountAmount: 6})
     },
-    handleBlueBall: function (blueBall, index) {
-      this.$store.dispatch('choiceBlueBall_SSQ_DS', {blueBall: blueBall, index: index})
+    handleBlueBall: function (isChecked, index) {
+      this.$store.dispatch('choiceBlueBall_SSQ_DS', {isChecked: isChecked, index: index, canChoiceBlueBallCountAmount: 1})
     }
   }
 }

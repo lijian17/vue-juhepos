@@ -63,7 +63,25 @@ const state = {
 // getters
 const getters = {
   redBalls: state => state.redBalls,
-  blueBalls: state => state.blueBalls
+  blueBalls: state => state.blueBalls,
+  isFullRedBalls: state => {
+    let choiceRedBallCountAmount = 0
+    for (let i = 0; i < state.redBalls.length; i++) {
+      if (state.redBalls[i].isChecked !== 0) {
+        choiceRedBallCountAmount++
+      }
+    }
+    return choiceRedBallCountAmount
+  },
+  isFullBlueBalls: state => {
+    let choiceBlueBallCountAmount = 0
+    for (let i = 0; i < state.blueBalls.length; i++) {
+      if (state.blueBalls[i].isChecked !== 0) {
+        choiceBlueBallCountAmount++
+      }
+    }
+    return choiceBlueBallCountAmount
+  }
 }
 
 // actions
@@ -80,12 +98,24 @@ const actions = {
 const mutations = {
   // 点击红球
   [types.CHOICE_RED_BALL_SSQ_DS] (state, redBall) {
-    state.redBalls[redBall.index].isChecked = redBall.redBall === 0 ? 1 : 0
+    if (getters.isFullRedBalls(state) < redBall.canChoiceRedBallCountAmount) {
+      state.redBalls[redBall.index].isChecked = redBall.isChecked === 0 ? 1 : 0
+      return
+    }
+    if (getters.isFullRedBalls(state) === redBall.canChoiceRedBallCountAmount && redBall.isChecked !== 0) {
+      state.redBalls[redBall.index].isChecked = 0
+    }
   },
 
   // 点击蓝球
   [types.CHOICE_BLUE_BALL_SSQ_DS] (state, blueBall) {
-    state.blueBalls[blueBall.index].isChecked = blueBall.blueBall === 0 ? 1 : 0
+    if (getters.isFullBlueBalls(state) < blueBall.canChoiceBlueBallCountAmount) {
+      state.blueBalls[blueBall.index].isChecked = blueBall.isChecked === 0 ? 1 : 0
+      return
+    }
+    if (getters.isFullBlueBalls(state) === blueBall.canChoiceBlueBallCountAmount && blueBall.isChecked !== 0) {
+      state.blueBalls[blueBall.index].isChecked = 0
+    }
   }
 }
 
