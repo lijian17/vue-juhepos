@@ -143,7 +143,7 @@
 
 .ssqzmtRedBoll li b{ font-weight:100;}
 
-.ssqzmtRedBoll li i{ width:150%; height:200%; background-image:url(../../assets/ssq/redBoll.png); background-repeat:no-repeat; background-size:100%; position:absolute; top:-104%; left:-24%; z-index:2; display:none; font-style:normal; color:#FFF; line-height:230%; font-size:7vw;}
+.ssqzmtRedBoll li i{ width:150%; height:200%; background-image:url(../../assets/ssq/redBall.png); background-repeat:no-repeat; background-size:100%; position:absolute; top:-104%; left:-24%; z-index:2; display:none; font-style:normal; color:#FFF; line-height:230%; font-size:7vw;}
 
 
 
@@ -168,7 +168,7 @@
 
 .ssqzmtBullBoll li b{ font-weight:100;}
 
-.ssqzmtBullBoll li i{width:150%; height:200%; background-image:url(../../assets/ssq/bullBoll.png); background-repeat:no-repeat; background-size:100%; position:absolute; top:-104%; left:-24%; z-index:2; display:none; font-style:normal; color:#FFF; line-height:230%; font-size:7vw;}
+.ssqzmtBullBoll li i{width:150%; height:200%; background-image:url(../../assets/ssq/bullBall.png); background-repeat:no-repeat; background-size:100%; position:absolute; top:-104%; left:-24%; z-index:2; display:none; font-style:normal; color:#FFF; line-height:230%; font-size:7vw;}
 
 
 #btn3,#btn4,#btn5{width:7%; line-height:260%; background-image:url(../../assets/ssq/clear.png); background-repeat:no-repeat; background-color:#fff; background-size:100%; border:none; position:relative; top:5vw; left:10vw;}

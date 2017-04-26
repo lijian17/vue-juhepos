@@ -2,3 +2,6 @@
  * Created by lijian on 2017/4/22.
  */
 export const CHANGE_SSQ_PLAY_TYPE = 'CHANGE_SSQ_PLAY_TYPE'
+
+export const CHOICE_RED_BALL_SSQ_DS = 'CHOICE_RED_BALL_SSQ_DS'
+export const CHOICE_BLUE_BALL_SSQ_DS = 'CHOICE_BLUE_BALL_SSQ_DS'
