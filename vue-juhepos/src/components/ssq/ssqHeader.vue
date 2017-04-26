@@ -3,7 +3,7 @@
     <section id="headerTop">
       <div class="hTitle" id="bt" v-on:click="showPlayTypeSelect = !showPlayTypeSelect, showTopRight = false">
         <router-link to="/"><span class="home"><img src="../../assets/ssq/home.png" width="100%" /></span></router-link>
-        <h1>双色球-单式<b><img src="../../assets/ssq/bt.png" /></b></h1>
+        <h1>双色球-{{playTypeName}}<b><img src="../../assets/ssq/bt.png" /></b></h1>
         <a href="javascript:;" class="wen" id="wen" v-on:click.stop.prevent="showTopRight = !showTopRight, showPlayTypeSelect = false"><img src="../../assets/ssq/san.png" width="100%" /></a>
       </div>
     </section>
@@ -33,6 +33,7 @@ export default {
   data: function () {
     return {
       msg: '双色球',
+      playTypeName: '单式',
       showPlayTypeSelect: false,
       showTopRight: false
     }
@@ -42,6 +43,20 @@ export default {
       alert(msg)
     },
     changeSSQPlayType: function (playType) {
+      switch (playType) {
+        case 120101001:
+          this.playTypeName = '单式'
+          break
+        case 120101003:
+          this.playTypeName = '复式'
+          break
+        case 120101004:
+          this.playTypeName = '胆拖'
+          break
+        default:
+          break
+      }
+      this.showPlayTypeSelect = false
       this.$store.dispatch('changeSSQPlayType', playType)
     }
   }

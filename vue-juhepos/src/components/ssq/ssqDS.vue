@@ -65,7 +65,6 @@ export default {
 
 .ssqzmtRedtile span{ color:#888581; text-indent:1rem; display:inline-block;}
 
-
 .ssqzmtRedBall{ width:95%; height:auto;  margin:0 auto 1.5rem;}
 
 .ssqzmtRedBall ul{ padding:0; margin:0;}
@@ -80,15 +79,9 @@ export default {
 
 .ssqzmtRedBall li i{ width:150%; height:200%; background-image:url(../../assets/ssq/redBall.png); background-repeat:no-repeat; background-size:100%; position:absolute; top:-104%; left:-24%; z-index:2; display:none; font-style:normal; color:#FFF; line-height:230%; font-size:7vw;}
 
-
-
-
-
 .ssqzmtBulltile{ width:100%; height:auto; font-size:4vw; text-align: left; color:#1985ea; border-left:#1985ea 5px solid; text-indent:.5rem; border-radius:2px;}
 
 .ssqzmtBulltile span{ color:#888581; text-indent:1rem; display:inline-block;}
-
-
 
 .ssqzmtBullBall{ width:95%; height:auto;  margin:0 auto 1.5rem;}
 
@@ -99,7 +92,6 @@ export default {
 .ssqzmtBullBall li span{ display:block; width:98%;border-radius:50%; border:#d8d8d8 solid 1px; line-height:220%; color:#1985ea; font-weight:100;font-size:5vw; background:#FFF;}
 
 .ssqzmtBullBall li span.on{border:#1985ea solid 1px; color:#fff; background:#1985ea;}
-
 
 .ssqzmtBullBall li b{ font-weight:100;}
 
