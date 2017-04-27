@@ -1,7 +1,7 @@
 <template>
   <footer class="footer" id="footer">
     <section class="stopTime">
-      距006期销售截止03分59秒{{playType2}}
+      距006期销售截止03分59秒{{playType}}
     </section>
 
     <section class="bntooer">
@@ -13,28 +13,30 @@
 </template>
 
 <script>
-  import {mapGetters} from 'vuex'
-  export default {
-    name: 'BottomStatusBar',
-    data: function () {
-      return {
-        msg: '底部状态栏'
-      }
-    },
-    computed: {
-      ...mapGetters({
-        playType2: 'playType'
-      })
-    },
-    methods: {
-      machineSelection: function (msg, e) {
-        // 现在我们可以访问原生事件对象
-        if (e) e.preventDefault()
-        alert(msg)
-        alert('机选')
-      }
+import {mapGetters} from 'vuex'
+
+export default {
+  name: 'BottomStatusBar',
+  data: function () {
+    return {
+      msg: '底部状态栏'
+    }
+  },
+  computed: {
+    ...mapGetters({
+      playType: 'playType',
+      betNote: 'betNote'
+    })
+  },
+  methods: {
+    machineSelection: function (msg, e) {
+      // 现在我们可以访问原生事件对象
+      if (e) e.preventDefault()
+      alert(msg)
+      alert('机选')
     }
   }
+}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
