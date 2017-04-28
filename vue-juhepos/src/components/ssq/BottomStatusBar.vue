@@ -6,7 +6,7 @@
 
     <section class="bntooer">
       <input type="submit" name="button" id="btn1" value="机选" v-on:click="machineSelection('', $e)" />
-      共 5000注,共 <span>100000</span>元
+      共 {{betNote}}注,共 <span>100000</span>元
       <input type="submit" name="button2" id="btn2" value="选好了" />
     </section>
   </footer>

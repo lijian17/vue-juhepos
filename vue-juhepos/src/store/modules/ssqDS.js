@@ -64,6 +64,8 @@ const state = {
 const getters = {
   redBalls: state => state.redBalls,
   blueBalls: state => state.blueBalls,
+
+  // 选择红球的个数
   choiceRedBallCountAmount: state => {
     let choiceRedBallCountAmount = 0
     for (let i = 0; i < state.redBalls.length; i++) {
@@ -73,6 +75,8 @@ const getters = {
     }
     return choiceRedBallCountAmount
   },
+
+  // 选择蓝球的个数
   choiceBlueBallCountAmount: state => {
     let choiceBlueBallCountAmount = 0
     for (let i = 0; i < state.blueBalls.length; i++) {
@@ -88,9 +92,11 @@ const getters = {
 const actions = {
   choiceRedBall_SSQ_DS ({ commit }, redBall) {
     commit(types.CHOICE_RED_BALL_SSQ_DS, redBall)
+    commit(types.CALCULATION_BETNOTE_SSQ_DS)
   },
   choiceBlueBall_SSQ_DS ({ commit }, blueBall) {
     commit(types.CHOICE_BLUE_BALL_SSQ_DS, blueBall)
+    commit(types.CALCULATION_BETNOTE_SSQ_DS)
   }
 }
 
@@ -115,6 +121,15 @@ const mutations = {
     }
     if (getters.choiceBlueBallCountAmount(state) === blueBall.canChoiceBlueBallCountAmount && blueBall.isChecked !== 0) {
       state.blueBalls[blueBall.index].isChecked = 0
+    }
+  },
+
+  // 计算投注注数
+  [types.CALCULATION_BETNOTE_SSQ_DS] (state) {
+    if (getters.choiceRedBallCountAmount(state) === 6 && getters.choiceBlueBallCountAmount(state) === 1) {
+      state.betNote = 1
+    } else {
+      state.betNote = 0
     }
   }
 }
