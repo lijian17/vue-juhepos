@@ -4,7 +4,7 @@
     <div class="ssqzmtRedBall">
       <ul id="redBall">
         <li v-for="(redBall, index) in redBalls">
-          <span v-bind:class="{on: redBall.isChecked}" v-on:click.stop.prevent="handleRedBall(redBall.isChecked, index)">{{(index + 1) | autoZeroPrefix(2)}}</span>
+          <span v-bind:class="{on: redBall.isChecked}" v-on:click.stop.prevent="handleRedBall(redBall.isChecked, index)">{{redBall.code}}</span>
           <b class="arb_bop">{{redBall.missingValue}}</b>
         </li>
       </ul>
@@ -16,7 +16,7 @@
     <div class="ssqzmtBullBall">
       <ul id="bullBall">
         <li v-for="(blueBall, index) in blueBalls">
-          <span v-bind:class="{on: (blueBall.isChecked !== 0 ? true : false)}" v-on:click.stop.prevent="handleBlueBall(blueBall.isChecked, index)">{{(index + 1) | autoZeroPrefix(2)}}</span>
+          <span v-bind:class="{on: (blueBall.isChecked !== 0 ? true : false)}" v-on:click.stop.prevent="handleBlueBall(blueBall.isChecked, index)">{{blueBall.code}}</span>
           <b class="arb_bop">{{blueBall.missingValue}}</b>
         </li>
       </ul>
@@ -32,12 +32,6 @@ export default {
   data: function () {
     return {
       msg: '双色球单式'
-    }
-  },
-  filters: {
-    autoZeroPrefix: function (num, n) {
-      if (!num) return ''
-      return (Array(n).join(0) + num.toString()).slice(-n)
     }
   },
   computed: {
