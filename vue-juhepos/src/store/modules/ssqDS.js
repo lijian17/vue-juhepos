@@ -66,26 +66,10 @@ const getters = {
   blueBalls: state => state.blueBalls,
 
   // 选择红球的个数
-  choiceRedBallCountAmount: state => {
-    let choiceRedBallCountAmount = 0
-    for (let i = 0; i < state.redBalls.length; i++) {
-      if (state.redBalls[i].isChecked !== 0) {
-        choiceRedBallCountAmount++
-      }
-    }
-    return choiceRedBallCountAmount
-  },
+  choiceRedBallCountAmount: state => state.redBalls.filter(function (value) { return value.isChecked !== 0 }).length,
 
   // 选择蓝球的个数
-  choiceBlueBallCountAmount: state => {
-    let choiceBlueBallCountAmount = 0
-    for (let i = 0; i < state.blueBalls.length; i++) {
-      if (state.blueBalls[i].isChecked !== 0) {
-        choiceBlueBallCountAmount++
-      }
-    }
-    return choiceBlueBallCountAmount
-  }
+  choiceBlueBallCountAmount: state => state.blueBalls.filter(function (value) { return value.isChecked !== 0 }).length
 }
 
 // actions
