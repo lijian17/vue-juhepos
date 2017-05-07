@@ -5,7 +5,7 @@
     </section>
 
     <section class="bntooer">
-      <input type="submit" name="button" id="btn1" value="机选" v-on:click="machineSelection('')" />
+      <input type="submit" name="button" id="btn1" value="机选" v-on:click="machineSelection()" />
       共 {{betNote}} 注,共 <span>{{betNote * 2}}</span> 元
       <input type="submit" name="button2" id="btn2" value="选好了" />
     </section>
@@ -29,8 +29,18 @@ export default {
     })
   },
   methods: {
-    machineSelection: function (msg) {
-      alert('机选' + msg + this.betNote)
+    machineSelection: function () {
+      switch (this.playType) {
+        case 120101001:
+          this.$store.dispatch('machineSelection_SSQ_DS', {redBall: this.$getRandomNumber(0, 32, 6, false), blueBall: this.$getRandomNumber(0, 15, 1, false)})
+          break
+        case 120101003:
+          break
+        case 120101004:
+          break
+        default:
+          break
+      }
     }
   }
 }

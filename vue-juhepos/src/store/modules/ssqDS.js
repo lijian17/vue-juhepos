@@ -76,22 +76,37 @@ const getters = {
 const actions = {
   choiceRedBall_SSQ_DS ({ commit }, redBall) {
     commit(types.CHOICE_RED_BALL_SSQ_DS, redBall)
-    // commit(types.CALCULATION_BETNOTE_SSQ_DS, rootState)
   },
+
   choiceBlueBall_SSQ_DS ({ commit }, blueBall) {
     commit(types.CHOICE_BLUE_BALL_SSQ_DS, blueBall)
-    // commit(types.CALCULATION_BETNOTE_SSQ_DS, rootState)
 
     if (getters.choiceRedBallCountAmount(state) === 6 && getters.choiceBlueBallCountAmount(state) === 1) {
       commit(types.CHANGE_BET_NOTE, 1)
     } else {
       commit(types.CHANGE_BET_NOTE, 0)
     }
+  },
+
+  machineSelection_SSQ_DS (context, payload) {
+    context.commit(types.INITIAL_SSQ_DS_STATE)
+    context.commit(types.MACHINE_SELECTION_SSQ_DS, payload)
+    context.commit(types.CHANGE_BET_NOTE, 1)
   }
 }
 
 // mutations
 const mutations = {
+  // 初始化
+  [types.INITIAL_SSQ_DS_STATE] (state) {
+    for (let i in state.redBalls) {
+      state.redBalls[i].isChecked = 0
+    }
+    for (let j in state.blueBalls) {
+      state.blueBalls[j].isChecked = 0
+    }
+  },
+
   // 点击红球
   [types.CHOICE_RED_BALL_SSQ_DS] (state, redBall) {
     if (getters.choiceRedBallCountAmount(state) < redBall.canChoiceRedBallCountAmount) {
@@ -120,6 +135,16 @@ const mutations = {
       state.betNote = 1
     } else {
       state.betNote = 0
+    }
+  },
+
+  // 机选1注
+  [types.MACHINE_SELECTION_SSQ_DS] (state, payload) {
+    for (let i in payload.redBall) {
+      state.redBalls[Number.parseInt(payload.redBall[i])].isChecked = 1
+    }
+    for (let j in payload.blueBall) {
+      state.blueBalls[Number.parseInt(payload.blueBall[j])].isChecked = 1
     }
   }
 }
