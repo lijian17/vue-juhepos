@@ -76,11 +76,17 @@ const getters = {
 const actions = {
   choiceRedBall_SSQ_DS ({ commit }, redBall) {
     commit(types.CHOICE_RED_BALL_SSQ_DS, redBall)
-    commit(types.CALCULATION_BETNOTE_SSQ_DS)
+    // commit(types.CALCULATION_BETNOTE_SSQ_DS, rootState)
   },
   choiceBlueBall_SSQ_DS ({ commit }, blueBall) {
     commit(types.CHOICE_BLUE_BALL_SSQ_DS, blueBall)
-    commit(types.CALCULATION_BETNOTE_SSQ_DS)
+    // commit(types.CALCULATION_BETNOTE_SSQ_DS, rootState)
+
+    if (getters.choiceRedBallCountAmount(state) === 6 && getters.choiceBlueBallCountAmount(state) === 1) {
+      commit(types.CHANGE_BET_NOTE, 1)
+    } else {
+      commit(types.CHANGE_BET_NOTE, 0)
+    }
   }
 }
 

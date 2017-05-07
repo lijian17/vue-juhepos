@@ -5,8 +5,8 @@
     </section>
 
     <section class="bntooer">
-      <input type="submit" name="button" id="btn1" value="机选" v-on:click="machineSelection('', $e)" />
-      共 {{betNote}}注,共 <span>100000</span>元
+      <input type="submit" name="button" id="btn1" value="机选" v-on:click="machineSelection('')" />
+      共 {{betNote}} 注,共 <span>{{betNote * 2}}</span> 元
       <input type="submit" name="button2" id="btn2" value="选好了" />
     </section>
   </footer>
@@ -29,11 +29,8 @@ export default {
     })
   },
   methods: {
-    machineSelection: function (msg, e) {
-      // 现在我们可以访问原生事件对象
-      if (e) e.preventDefault()
-      alert(msg)
-      alert('机选')
+    machineSelection: function (msg) {
+      alert('机选' + msg + this.betNote)
     }
   }
 }

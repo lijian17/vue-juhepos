@@ -9,6 +9,7 @@ import * as actions from './actions'
 import * as getters from './getters'
 import ssqHeader from './modules/ssqHeader'
 import ssqDS from './modules/ssqDS'
+import BottomStatusBar from './modules/BottomStatusBar'
 
 Vue.use(Vuex)
 
@@ -18,6 +19,7 @@ export default new Vuex.Store({
   getters,
   modules: {
     ssqHeader,
-    ssqDS
+    ssqDS,
+    BottomStatusBar
   }
 })
