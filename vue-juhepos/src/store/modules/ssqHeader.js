@@ -17,6 +17,8 @@ const getters = {
 const actions = {
   changeSSQPlayType ({ commit }, playType = 120101004) {
     commit(types.CHANGE_SSQ_PLAY_TYPE, playType)
+    commit(types.INITIAL_SSQ_DS_STATE)
+    commit(types.CHANGE_BET_NOTE, 0)
   }
 }
 

@@ -1,7 +1,7 @@
 <template>
   <footer class="footer" id="footer">
     <section class="stopTime">
-      距006期销售截止03分59秒{{playType}}
+      距006期销售截止03分59秒
     </section>
 
     <section class="bntooer">
