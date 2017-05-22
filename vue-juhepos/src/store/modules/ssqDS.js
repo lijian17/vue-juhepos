@@ -76,6 +76,12 @@ const getters = {
 const actions = {
   choiceRedBall_SSQ_DS ({ commit }, redBall) {
     commit(types.CHOICE_RED_BALL_SSQ_DS, redBall)
+
+    if (getters.choiceRedBallCountAmount(state) === 6 && getters.choiceBlueBallCountAmount(state) === 1) {
+      commit(types.CHANGE_BET_NOTE, 1)
+    } else {
+      commit(types.CHANGE_BET_NOTE, 0)
+    }
   },
 
   choiceBlueBall_SSQ_DS ({ commit }, blueBall) {
